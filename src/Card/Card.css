@@ -1,0 +1,123 @@
+.card {
+  height: 600px;
+  width: 80%;
+  background-color: black;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-card1 {
+  display: flex;
+  color: whitesmoke;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  height: 400px;
+  width: 400px;
+  background: linear-gradient(0deg, #424242, transparent),
+    url("https://images.unsplash.com/photo-1542601098-8fc114e148e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+}
+.degree {
+  color: whitesmoke;
+  font-size: 60px;
+  font-weight: 400;
+}
+#city {
+  color: white;
+  font-size: 40px;
+  margin: 0;
+  margin-top: 15px;
+}
+#time {
+  font-size: small;
+  margin-top: -3px;
+}
+#sesion {
+  font-size: small;
+  margin-top: -3px;
+}
+#img {
+  width: 60px;
+}
+.city-name {
+  display: flex;
+  gap: 15px;
+}
+.sub-card2 {
+  height: 400px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: rgba(198, 167, 175, 0.1);
+}
+.city {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+.input {
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+}
+.btn {
+  width: 60px;
+  height: 36px;
+  border-radius: 10px;
+}
+.weather-header {
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 40px;
+}
+.weather-header > h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.weather-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: auto;
+  font-size: small;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: auto;
+    gap: 15px;
+    padding: 30px 0;
+  }
+  .sub-card1 {
+    width: 80%;
+    flex-direction: column;
+    gap: 0;
+  }
+  .sub-card2 {
+    width: 80%;
+  }
+  .degree {
+    display: flex;
+    flex-direction: column;
+    font-size: 58px;
+    font-weight: 600;
+  }
+  #city {
+    letter-spacing: -1px;
+  }
+  .input {
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+  }
+}
